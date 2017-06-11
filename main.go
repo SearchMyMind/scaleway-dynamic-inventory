@@ -51,7 +51,7 @@ func getServers(dict map[string][]string, token, orgToken string) {
 				dict[tag] = make([]string, 0)
 			}
 
-			dict[tag] = append(dict[tag], server.PrivateAddress.IP)
+			dict[tag] = append(dict[tag], server.PrivateIP)
 		}
 	}
 }
